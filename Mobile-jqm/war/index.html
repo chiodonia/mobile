@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="Mobile demo application." />
+		<meta name="keywords" content="Mobile demo application" />
+		<meta name="subject" content="swisspost-mobile" />
+		<meta name="language" content="en" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Mobile app</title>
+		<link rel="stylesheet" href="themes/swisspost-1.0.0.min.css" />
+		<link rel="stylesheet" href="css/jquery.mobile.structure-1.0.1.min.css" />
+		<link rel="shortcut icon" href="favicon.ico" />
+		<link rel="apple-touch-icon" href="apple-touch-icon.png" />
+		<script src="js/jquery-1.7.1.min.js"></script>
+		<script src="js/jquery.mobile-1.0.1.min.js"></script>
+	</head>
+    <body>
+        <div data-role="page" id="main">
+	        <div data-theme="a" data-role="header" data-position="fixed">
+				<img src="img/logo_e.gif" alt="SwissPost" height="40px"/>
+	        	<div style="float:right; padding:10px;">
+					<a href="#info" data-role="button" data-icon="info" data-iconpos="notext" data-rel="dialog" data-transition="pop">Info</a>
+				</div>
+            </div>
+            <div data-role="content">
+                <ul data-role="listview" data-divider-theme="a" data-inset="true">
+                    <li data-role="list-divider" role="heading">
+                        Applications
+                    </li>
+                    <li data-theme="a">
+                        <a href="#page1" data-transition="slide">
+                            My location
+                        </a>
+                    </li>
+                    <li data-theme="a">
+                        <a href="#page1" data-transition="slide">
+                            My contacts
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+		<div data-role="page" id="info">
+			<div data-role="header" data-theme="a" class="ui-corner-top ui-header ui-bar-d" role="banner">
+				<h1>Info</h1>
+			</div>				
+            <div data-role="content" role="main">
+				<div>
+					<h2>SwissPost Mobile demo application.</h2>
+					<h3>UUID: xyz</h3>
+				</div>
+			</div>
+		</div>
+    </body>
+</html>

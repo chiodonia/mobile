@@ -1,0 +1,42 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<g:HTMLPanel>
+        <div data-role="page" id="main">
+	        <div data-theme="a" data-role="header" data-position="fixed">
+				<img src="img/logo_e.gif" alt="SwissPost" height="40px"/>
+	        	<div style="float:right; padding:10px;">
+					<a href="#info" data-role="button" data-icon="info" data-iconpos="notext" data-rel="dialog" data-transition="pop">Info</a>
+				</div>
+            </div>
+            <div data-role="content">
+                <ul data-role="listview" data-divider-theme="a" data-inset="true">
+                    <li data-role="list-divider" role="heading">
+                        Applications
+                    </li>
+                    <li data-theme="a">
+                        <a href="#page1" data-transition="slide">
+                            My location
+                        </a>
+                    </li>
+                    <li data-theme="a">
+                        <a href="#page1" data-transition="slide">
+                            My contacts
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+		<div data-role="page" id="info">
+			<div data-role="header" data-theme="a" class="ui-corner-top ui-header ui-bar-d" role="banner">
+				<h1>Info</h1>
+			</div>				
+            <div data-role="content" role="main">
+				<div>
+					<h2>SwissPost Mobile demo application.</h2>
+					<h3>UUID: <g:Label ui:field="uuid" text="uuid" /></h3>
+				</div>
+			</div>
+		</div>	
+	</g:HTMLPanel>
+</ui:UiBinder> 

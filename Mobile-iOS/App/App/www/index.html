@@ -1,0 +1,58 @@
+<!doctype html>
+<!-- The DOCTYPE declaration above will set the    -->
+<!-- browser's rendering engine into               -->
+<!-- "Standards Mode". Replacing this declaration  -->
+<!-- with a "Quirks Mode" doctype may lead to some -->
+<!-- differences in layout.                        -->
+
+<html>
+  <head>
+	<title>Mobile app</title>
+
+	<link rel="stylesheet" href="themes/swisspost-1.0.0.min.css" />
+	<link rel="stylesheet" href="css/jquery.mobile.structure-1.0.1.min.css" />
+
+	<link rel="shortcut icon" href="favicon.ico" />
+	<link rel="apple-touch-icon" href="apple-touch-icon.png" />
+
+	<!-- JQuery -->
+	<script src="js/jquery-1.7.1.min.js"></script>
+      <!--
+	<script src="js/jquery.mobile-1.0.1.min.js"></script>
+       -->
+    <!--                                           -->
+    <!-- This script loads your compiled module.   -->
+    <!-- If you add any GWT meta tags, they must   -->
+    <!-- be added before this line.                -->
+    <!--                                           -->
+    <script type="text/javascript" language="javascript" src="App/App.nocache.js"></script>
+    
+    <!-- PhoneGap -->
+    <script type="text/javascript" language="javascript" src="phonegap-1.4.1.js"></script>
+
+    <!-- PhoneGap: for Android -->
+    <script type="text/javascript">
+		document.addEventListener("deviceready", (function(){ PhoneGap.available = true;}), false);
+	</script>
+  </head>
+
+  <!--                                           -->
+  <!-- The body can have arbitrary html, or      -->
+  <!-- you can leave the body empty if you want  -->
+  <!-- to create a completely dynamic UI.        -->
+  <!--                                           -->
+  <body>
+    <!-- OPTIONAL: include this if you want history support -->
+    <!-- 
+    <iframe src="javascript:''" id="__gwt_historyFrame" tabIndex='-1' style="position:absolute;width:0;height:0;border:0"></iframe>
+ 	-->
+ 	
+    <!-- RECOMMENDED if your web app will not function without JavaScript enabled -->
+    <noscript>
+      <div style="width: 22em; position: absolute; left: 50%; margin-left: -11em; color: red; background-color: white; border: 1px solid red; padding: 4px; font-family: sans-serif">
+        Your web browser must have JavaScript enabled
+        in order for this application to display correctly.
+      </div>
+    </noscript>
+  </body>
+</html>
